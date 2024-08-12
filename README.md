@@ -1,6 +1,13 @@
 # Earth's Orbit from Pulsar Signals 
 Plotting the earth's orbit from pulsars J1614-2230 and J2222-0137 using python with pandas, numpy and matplotlib
 This is a project I made on work experience that calculates the orbit of the earth based on residuals from pulsars J1614-2230 and J2222-0137. When ran, the project displays graphs about the timing of these pulsars and finally the orbit of the earth. This program uses pandas, matplotlib and numpy to calculate and plot these graphs.
+## The Plots
+### Delays vs Time
+Four out of the six plots on this repository are of the pulsar residuals vs the time they are recorded. These roughly follow a sine curve that suggests that the earth's orbit is elliptical. There is one curve for each pulsar, and this is because the earth (when travelling in its elliptical orbit) will get at its closest point to one of the pulsars before moving to its closest point to the other pulsar. The fact that the separation of the two curves is about a quarter of the period also suggests an elliptical orbit.
+### Earth's Orbit from Pulsar Timing Delays
+This shows the orbit of the earth from these timing delays. By plotting the residuals of the pulsars against eachother rather than against time, you can calculate the orbit. This is equivalent to making a coordinate system from the timing delays, and calculating the orbit of the earth. The graph is in units of miliseconds (from the pulsar timing residuals), but can be translated into metres using the speed of light. 
+### Velocity vs Time
+This is an interesting graph, calculated by deriving the speed of the earth's orbit from its position. The speed changes because of gravity - the earth moves faster at the perihelion (when it's closest to the sun) and slower at the aphelion (when it's further away from the sun). This accounts for the general shape of the graph (how it goes up and down), but does not account for the smaller, sharper changes that happen as it accelerates from a slower speed to a higher speed. One of the challenges for this graph was calculating its speed in units of kilometres per second rather than drom the residuals.
 ## The Process
 This is a project I created on work experience at OzGrav. This is a python program where I calculated the earth's orbit from pulsar residuals. This is an extension of other projects I'd done including retrieving data from the ATNF pulsar catalogue and visualising it. 
 
