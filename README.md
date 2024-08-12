@@ -1,5 +1,4 @@
 # Earth's Orbit from Pulsar Signals 
-Plotting the earth's orbit from pulsars J1614-2230 and J2222-0137 using python with pandas, numpy and matplotlib
 This is a project I made on work experience that calculates the orbit of the earth based on residuals from pulsars J1614-2230 and J2222-0137. When ran, the project displays graphs about the timing of these pulsars and finally the orbit of the earth. This program uses pandas, matplotlib and numpy to calculate and plot these graphs.
 ## The Plots
 ### Delays vs Time
